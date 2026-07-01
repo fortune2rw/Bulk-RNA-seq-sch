@@ -8,4 +8,4 @@ trimmomatic PE -phred33 \
         $TRIMMED_DIR/${SAMPLE}_1_unpaired.fastq \
         $TRIMMED_DIR/${SAMPLE}_2_paired.fastq \
         $TRIMMED_DIR/${SAMPLE}_2_unpaired.fastq \
-        TRAILING:10 MINLEN:50trimmomatic PE 
+        TRAILING:10 MINLEN:50trimmomatic 
