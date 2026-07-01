@@ -11,3 +11,9 @@ echo "SRA files converted to FASTQ"
 
 mv $FASTQ_DIR/SRR4933108_1.fastq $FASTQ_DIR/CTRL1_1.fastq
 echo "File renamed successfully"
+
+
+# Upload to google cloud bucket
+echo ""
+echo "Uploading raw FASTQ to bucket..."
+gsutil -m cp $FASTQ_DIR/*.fastq $BUCKET/fastq/
