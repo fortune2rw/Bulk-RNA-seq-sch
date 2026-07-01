@@ -128,5 +128,7 @@ The pipeline generates the following files:
 - FastQC reports
 - Trimmed FASTQ files
 - STAR genome index
-- Sorted BAM alignment files
-- STAR alignment statistics
+- Coordinate-sorted BAM alignment files (`Aligned.sortedByCoord.out.bam`)
+- Gene-level read count tables (`ReadsPerGene.out.tab`)
+- Alignment summary statistics (`Log.final.out`)
+- Detected splice junctions (`SJ.out.tab`)
