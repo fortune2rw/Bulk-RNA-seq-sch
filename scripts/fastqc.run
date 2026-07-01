@@ -1,0 +1,4 @@
+#bin!/bash
+
+#run fastqc on each sample
+fastqc FASTQ_DIR/*.fastq --outdir $FASTQC_DIR --thread 4
