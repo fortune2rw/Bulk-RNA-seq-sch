@@ -1,0 +1,11 @@
+#!/bin/bash
+
+trimmomatic PE -phred33 \
+        -summary $TRIMMED_DIR/${SAMPLE}_summary.txt \
+        $FASTQ_DIR/${SAMPLE}_1.fastq \
+        $FASTQ_DIR/${SAMPLE}_2.fastq \
+        $TRIMMED_DIR/${SAMPLE}_1_paired.fastq \
+        $TRIMMED_DIR/${SAMPLE}_1_unpaired.fastq \
+        $TRIMMED_DIR/${SAMPLE}_2_paired.fastq \
+        $TRIMMED_DIR/${SAMPLE}_2_unpaired.fastq \
+        TRAILING:10 MINLEN:50trimmomatic PE 
