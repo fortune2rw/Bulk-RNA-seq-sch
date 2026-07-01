@@ -1,0 +1,11 @@
+# Use paired trimmed fastq file for alighment
+
+
+ STAR --runThreadN 4 \
+        --genomeDir $INDEX_DIR \
+        --readFilesIn \
+            $TRIMMED_DIR/${SAMPLE}_1_paired.fastq \
+            $TRIMMED_DIR/${SAMPLE}_2_paired.fastq \
+        --outSAMtype BAM SortedByCoordinate \
+        --outFileNamePrefix $OUTPUT_DIR/${SAMPLE}/ \
+        --quantMode GeneCounts
