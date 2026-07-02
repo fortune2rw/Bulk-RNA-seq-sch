@@ -132,3 +132,6 @@ The pipeline generates the following files:
 - Gene-level read count tables (`ReadsPerGene.out.tab`)
 - Alignment summary statistics (`Log.final.out`)
 - Detected splice junctions (`SJ.out.tab`)
+
+## Reference 
+- National Cancer Institute. *GDC Bioinformatics Pipeline: mRNA Analysis*. Available at: https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/Expression_mRNA_Pipeline/ (accessed 2 July 2026). :contentReference[oaicite:0]{index=0}
